@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora SPTecher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- <div id="app">
+    <div id="star-container">
+      <div id="star-pattern"></div>
+      <div id="star-gradient-overlay"></div>
+    </div>
+    <div id="stripe-container">
+      <div id="stripe-pattern"></div>
+    </div>
+  </div> -->
+
+
+  
+  <h3>Digite um número decimal:</h3>
+  <input id="demo1" type="text" placeholder="Ex: 42">
+  <br><br>
+
+  <button onclick="converter()">Converter</button>
+
+  <h3>Resultados:</h3>
+  <p>Octal:
+  </p><div id="demo2"></div>
+  <p></p>
+  <p>Hexadecimal:
+  </p><div id="demo3"></div>
+  <p></p>
+  <p>Binário:
+  </p><div id="demo4"></div>
+  <p></p>
+
+</body>
+</html>
+<script>
+    function converter() {
+        var decimal = Number(demo1.value);
+
+        demo2.innerHTML = decimal.toString(8);
+        demo3.innerHTML = decimal.toString(16);
+        demo4.innerHTML = decimal.toString(2);
+    }
+</script>
